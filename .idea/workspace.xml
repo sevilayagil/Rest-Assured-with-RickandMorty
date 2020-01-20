@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3521fc64-0b8c-43f6-8ee4-7edf85e81a5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/features/GetCharacters.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/GetCharactersSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/GetMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/steps/GetCharactersSteps.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/steps/GetMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/GetCharacters.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/GetCharacters.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/GetCharactersSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/GetCharactersSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/GetMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/GetMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/GetCharactersSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/GetCharactersSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/GetMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/GetMethods.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

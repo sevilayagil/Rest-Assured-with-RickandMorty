@@ -23,4 +23,9 @@ public class GetCharactersSteps {
     @Then("^I should see Character's name as \"([^\"]*)\"$")
     public void iShouldSeeCharacterSNameAs(String arg0) throws Throwable {
     }
+
+    @Then("^I should see verify GET parameter$")
+    public void ıShouldSeeVerifyGETParameter() {
+        GetMethods.PerformQueryParam();
+    }
 }
