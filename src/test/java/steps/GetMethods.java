@@ -40,14 +40,11 @@ public class GetMethods {
                 then()
                 .body("results[15].name",containsString("Get Schwifty"))
                 .body("results[15].episode",is("S02E05"));
-
-
     }
     public static void Location(){
         when()
                 .get(String.format("https://rickandmortyapi.com/api/location/3"))
                 .then()
-                .body("type",not("Space"));
+                .body("type",not("Space")).statusCode(200);
     }
-
 }
