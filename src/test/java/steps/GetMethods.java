@@ -5,8 +5,12 @@ import io.restassured.http.ContentType;
 import io.restassured.response.ResponseBody;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
+import org.hamcrest.Matchers;
+import org.junit.Assert;
 
 import javax.xml.ws.Response;
+
+import java.util.List;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -35,16 +39,23 @@ public class GetMethods {
                 .body("results[0].id",equalTo(1));
     }
     public static void Episode(){
-                when()
-                .get(String.format("https://rickandmortyapi.com/api/episode/")).
-                then()
-                .body("results[15].name",containsString("Get Schwifty"))
-                .body("results[15].episode",is("S02E05"));
+        List<String> names = RestAssured.when().get(String.format("https://rickandmortyapi.com/api/episode/"))
+                .then().extract().jsonPath()
+                .getList("results.name");
+                 Assert.assertTrue(names.contains("Get Schwifty"));
+                 System.out.println(names.size());
+                 System.out.println(names);
+        List<String> episodes = RestAssured.when().get(String.format("https://rickandmortyapi.com/api/episode/"))
+                .then().extract().jsonPath()
+                .getList("results.episode");
+                 Assert.assertTrue(episodes.contains("S02E05"));
+                 System.out.println(episodes.size());
+                 System.out.println(episodes);
     }
     public static void Location(){
         when()
                 .get(String.format("https://rickandmortyapi.com/api/location/3"))
                 .then()
-                .body("type",not("Space")).statusCode(200);
+                .body("type", Matchers.not("Space")).statusCode(200);
     }
 }
